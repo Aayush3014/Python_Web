@@ -74,7 +74,7 @@ def retrieve(k):
       
       
         elif c == 2:
-            with open("rohanExercise.txt","a") as har:
+            with open("rohanExercise.txt") as har:
                 e = har.readlines()
                 for i in e:
                     print(i,end=",")
@@ -83,21 +83,25 @@ def retrieve(k):
     if k == 3:   # input for hammad
         c = int(input("Enter the Choice\n1.Food\n2.Excercise"))
         if c == 1:
-            with open("HammadFood.txt","a") as har:
+            with open("HammadFood.txt") as har:
                 e = har.readlines()
                 for i in e:
                     print(i)
       
       
         elif c == 2:
-            with open("HammadExercise.txt","a") as har:
+            with open("HammadExercise.txt") as har:
                 e = har.readlines()
                 for i in e:
                     print(i)
 
-print("Enter Person Number To Enter data : \n1.Harry\n2.Rohan\n3.Hammad")
-a = int(input("Enter number : "))
-if a == 1:
-    entry(a)
-elif a==2:
-    retrieve(a)
+
+a = input("Enter choice to log or retrieve : ")
+if a == "log":
+    print("Enter Person Number To Enter data : \n1.Harry\n2.Rohan\n3.Hammad")
+    input1 = int(input("Enter choice : "))
+    entry(input1)
+elif a=="retrieve":
+    print("Enter Person Number To Enter data : \n1.Harry\n2.Rohan\n3.Hammad")
+    input1 = int(input("Enter choice : "))
+    retrieve(input1)
