@@ -25,7 +25,7 @@ print(l)
 
 l = 90       #global variable
 def func():
-    global c   # it will change the value of l
+    global c   # it will initialize  the value of c 
     c = 5
     x = 87  # local variable
     l = 7    # local variable

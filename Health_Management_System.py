@@ -7,7 +7,7 @@ def getdate():
 
 def entry(k):
     if k == 1:   # input for harry
-        c = int(input("Enter the Choice\n1.Food\n2.Excercise"))
+        c = int(input("Enter the Choice\n1.Food\n2.Excercise\nEnter Choice : "))
         if c == 1:
             value = input("Enter Food\n")
             with open("HarryFood.txt","a") as har:
@@ -21,7 +21,7 @@ def entry(k):
     
 
     if k == 2:   # input for rohan
-        c = int(input("Enter the Choice\n1.Foodrohan\n2.Excerciserohan"))
+        c = int(input("Enter the Choice\n1.Food\n2.Excercise\nEnter Choice : "))
         if c == 1:
             value = input("Enter Food\n")
             with open("rohanFood.txt","a") as har:
@@ -35,7 +35,7 @@ def entry(k):
 
 
     if k == 3:   # input for hammad
-        c = int(input("Enter the Choice\n1.Food\n2.Excercise"))
+        c = int(input("Enter the Choice\n1.Food\n2.Excercise\nEnter Choice : "))
         if c == 1:
             value = input("Enter Food\n")
             with open("HammadFood.txt","a") as har:
