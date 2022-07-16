@@ -15,6 +15,8 @@
 # square = list(map(lambda x: x*x,num))
 # print(square)
 
+# Revisit
+
 def square(a):
     return a*a
 def cube(a):
