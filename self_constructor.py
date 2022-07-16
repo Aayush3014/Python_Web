@@ -9,7 +9,7 @@ class Employee:
     def printdetails(self):
         return f"name is {self.name}. Salary is {self.salary}.role is {self.role}"
     
-#harry = Employee()
+harry = Employee("Harry",48655,"t")
 rohan = Employee("Rohan",556455,"s")
 
 # harry.name = "Harry"
@@ -17,3 +17,4 @@ rohan = Employee("Rohan",556455,"s")
 # rohan.salary = 6564
 # rohan.role = "Student"
 print(rohan.printdetails())
+print(harry.printdetails())
