@@ -28,14 +28,15 @@ class Player:
     def printPlayer(self):
         return f"The name is {self.name} and game is {self.game}"
 
-# class CoolProg(Employee,Player):
+# class CoolProg(Employee,Player):  # constructor of employee class will be called first.
 #     pass
 
-class CoolProg(Player,Employee):
+class CoolProg(Player,Employee):    # constructor of Player class will be called first.
     pass
 
 harry = Employee("Harry",48655,"t")
 rohan = Employee("Rohan",556455,"s")
 
-karan = CoolProg("karan",["prog","player"])
-print(karan.printPlayer())
+karan = CoolProg("karan",["prog","player"])   # we have to give values of constructor in object according to what 
+                                              # class is inherited first
+print(karan.printPlayer())   
