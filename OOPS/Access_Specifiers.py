@@ -43,8 +43,9 @@ emp2 = Employee2("emp2",8556,"5")
 
 """Accessing variables form derived Class"""
 
-print(emp2.no_of_leaves)   # Accessing Public Variable
+# print(emp2.no_of_leaves)   # Accessing Public Variable
 
-print(emp2._protec)        # Accessing Protected Variable
+# print(emp2._protec)        # Accessing Protected Variable
 
-print(emp2._Employee2__private)      # Accessing Private Variable
+# print(emp2._Employee2__private)      # Accessing Private variable 
+#                                     # Here We cannot access Private variable from derived CLass
