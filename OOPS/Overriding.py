@@ -1,6 +1,3 @@
-from tkinter import ON
-
-
 class One:
     classvar1 = "I am a class variable of Class one."
 
