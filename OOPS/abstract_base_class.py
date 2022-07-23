@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
-    def printarea(self):   # After using @abstractmethod decorator printarea() is necessarily need to be defined in all the classes 
-        return 0
+    def printarea(self):   # After using @abstractmethod decorator printarea() is necessarily need to be defined  
+        return 0           # in all the classes in which Shape class is being inherited.
 
 
 class Rectangle(Shape):
@@ -13,7 +13,7 @@ class Rectangle(Shape):
         self.breadth = 5
 
     def printarea(self):
-        # return super().printarea()
+        # return super().printarea()    It will return the value which is returned in abstract base class.
         return self.length*self.breadth
 
 
