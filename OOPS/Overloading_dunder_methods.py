@@ -3,6 +3,9 @@
 
 
 
+from numpy import add
+
+
 class Employee:
     no_of_leaves = 10
 
@@ -23,7 +26,7 @@ class Employee:
         print("hellooooooooo")
 
     def __add__(self, other):                # Special dunder method created to overload add operator
-        return self.salary + other.salary  # salary of both objects.
+        return self.salary - other.salary  # salary of both objects.
 
     def __truediv__(self, other):
         return self.salary / other.salary
@@ -41,8 +44,12 @@ class Employee:
 
 
 harry = Employee("Harry", 45, "t")
-# rohan = Employee("Rohan", 5, "s")
+rohan = Employee("Rohan", 5, "s")
 
 # print(harry + rohan)
 # print(harry/rohan)
-print(harry)
+# print(harry)
+# print(6+6)
+
+# overloading using dunder methods will only affect the objects of the class 
+# normal calculation will remain unaffected
