@@ -6,11 +6,13 @@ class Employee:
 
     def printdetails(self):
         return f"The Employee is {self.fname} {self.lname}"
+
     @property
     def email1(self):
         return f"{self.fname}.{self.lname}@google.com"
 
-ayush = Employee("Ayush","Kumar")
+
+ayush = Employee("Ayush", "Kumar")
 # print(ayush.printdetails())
 print(ayush.email1)
 ayush.fname = "Us"
