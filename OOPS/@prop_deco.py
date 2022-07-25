@@ -1,7 +1,3 @@
-import email
-from tkinter.messagebox import NO
-
-
 class Employee:
     def __init__(self, fname, lname) -> None:
         self.fname = fname
@@ -28,7 +24,7 @@ class Employee:
         self.lname = names.split(".")[1]
 
     @email1.deleter       # It is created to delete the value created by setter
-                          # entities created by setter decorator cannot be deleted normally.
+    # entities created by setter decorator cannot be deleted normally.
     def email1(self):
         self.fname = None  # we have to use deleter for deleting the value.
         self.lname = None
